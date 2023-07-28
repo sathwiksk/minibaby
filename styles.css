@@ -1,0 +1,127 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+  }
+  
+  body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+  }
+ 
+  
+  .mode-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .mode-button {
+    background-color: #333; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .mode-button#night-mode-button {
+    background-color: #333; 
+  }
+  
+  /* CSS for active mode in toggle buttons */
+  
+  .active-mode {
+    background-color: #4CAF50 ; /* Night mode button color when active */
+    color: #fff; /* Text color for active mode button */
+  }
+
+  
+  
+  /* CSS to optimize for mobile */
+  @media screen and (min-width:1000px)
+  {
+    #coomeet_container {
+      width: 1000px !important  ; 
+      height: 600px  !important ; 
+      border-radius: 20px !important; 
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      margin-bottom: 20px; 
+      align-items: center;
+      justify-content: center; 
+      position: relative; 
+    }
+    
+    div#coomeet_container
+    {
+      border-radius:10px !important;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    #coomeet_container {
+      width: 100vw !important;
+      height: 100vh !important; /
+
+    }
+
+  
+    .mode-buttons {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      font-size:80%;
+      width:120%;      
+      transform: translateX(-50%);
+      justify-content: center;
+      
+    }
+    .mode-button{
+      margin-left:5vw;
+    }
+    #coomeet_container {
+      border-radius: 10px !important;
+  }
+
+  div#coomeet_container
+  {
+    border-radius:10px !important;
+  }
+  .mode-buttons {
+    display: none;}
+}
+
+
+@media screen and (max-width:500px)
+{
+  .mode-buttons {
+    display: none;}
+}
+  /* CSS for night mode */
+  
+  .night-mode {
+    background-color: #042434; /* Background color of the <html> element in night mode */
+  }
+  
+  /* Update button styles for night mode */
+  
+  .night-mode .mode-button#day-mode-button {
+    background-color: #333; /* Day mode button color in night mode */
+    color: #fff; /* Text color for day mode button in night mode */
+  }
+  
+  .night-mode .mode-button#night-mode-button {
+    background-color: #4CAF50; /* Night mode button color in night mode */
+    color: #fff; /* Text color for night mode button in night mode */
+  }
+  
