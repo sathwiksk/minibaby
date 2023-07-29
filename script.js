@@ -44,19 +44,3 @@ function hideModeButtonsForMobile() {
 hideModeButtonsForMobile();
 window.addEventListener('resize', hideModeButtonsForMobile);
 
-function setContainerSize() {
-  const coomeetContainer = document.getElementById('coomeet_container');
-  const screenWidth = window.innerWidth;
-
-  if (screenWidth <= 900) {
-    coomeetContainer.style.setProperty('width', window.innerWidth + 'px', 'important');
-    coomeetContainer.style.setProperty('height', window.innerHeight + 'px', 'important');
-    coomeetContainer.style.setProperty('border-radius', '10px', 'important');
-  } else {
-    coomeetContainer.style.setProperty('width', '1000px', 'important');
-    coomeetContainer.style.setProperty('height', '600px', 'important');
-    coomeetContainer.style.setProperty('border-radius', '20px', 'important');
-  }
-}
-setContainerSize();
-window.addEventListener('resize', setContainerSize);
