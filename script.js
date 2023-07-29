@@ -32,7 +32,30 @@ function toggleNightMode() {
   if (isDarkModeEnabled) {
     document.body.classList.add('night-mode');
   }
-  
-  
+
+
   updateButtonStyles();
+
+
+  function hideModeButtonsForMobile() {
+  const modeButtons = document.querySelector('.mode-buttons');
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 900) {
+    modeButtons.style.display = 'none';
+  } else {
+    modeButtons.style.display = 'flex';
+  }
+}
+
+// Call the function initially and on window resize
+hideModeButtonsForMobile();
+window.addEventListener('resize', hideModeButtonsForMobile);
+
+
+
+
+
+
+  
   
