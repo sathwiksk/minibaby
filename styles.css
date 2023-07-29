@@ -68,27 +68,20 @@ html, body {
       border-radius:10px !important;
     }
   }
-  
+  */
   @media screen and (max-width: 900px) {
     #coomeet_container {
-      width: 100vw !important;
-      height: 100vh !important; /
+      width: 100% !important;
+      height: 100% !important; /
 
     }
 
   
    
-    #coomeet_container {
-      border-radius: 10px !important;
-  }
-
-  div#coomeet_container
-  {
-    border-radius:10px !important;
-  }
+   
   .mode-buttons {
     display: none;}
-}  */
+}  
 
 /*
 @media screen and (max-width:500px)
