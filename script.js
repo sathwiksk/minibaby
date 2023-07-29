@@ -49,15 +49,14 @@ function setContainerSize() {
   const screenWidth = window.innerWidth;
 
   if (screenWidth <= 900) {
-    coomeetContainer.style.width = window.innerWidth + 'px';
-    coomeetContainer.style.height = window.innerHeight + 'px';
-    coomeetContainer.style.borderRadius = '10px';
+    coomeetContainer.style.setProperty('width', window.innerWidth + 'px', 'important');
+    coomeetContainer.style.setProperty('height', window.innerHeight + 'px', 'important');
+    coomeetContainer.style.setProperty('border-radius', '10px', 'important');
   } else {
-    coomeetContainer.style.width = '1000px';
-    coomeetContainer.style.height = '600px';
-    coomeetContainer.style.borderRadius = '20px';
+    coomeetContainer.style.setProperty('width', '1000px', 'important');
+    coomeetContainer.style.setProperty('height', '600px', 'important');
+    coomeetContainer.style.setProperty('border-radius', '20px', 'important');
   }
 }
-
 setContainerSize();
 window.addEventListener('resize', setContainerSize);
