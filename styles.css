@@ -101,12 +101,14 @@ html, body {
     display: none;}
 }
 
-
+/*
 @media screen and (max-width:500px)
 {
   .mode-buttons {
     display: none;}
 }
+
+*/
   /* CSS for night mode */
   
   .night-mode {
