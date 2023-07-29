@@ -68,7 +68,7 @@ html, body {
       border-radius:10px !important;
     }
   }
-  */
+  
   @media screen and (max-width: 900px) {
     #coomeet_container {
       width: 100vw !important;
@@ -88,7 +88,7 @@ html, body {
   }
   .mode-buttons {
     display: none;}
-}
+}  */
 
 /*
 @media screen and (max-width:500px)
