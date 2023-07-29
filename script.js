@@ -49,8 +49,8 @@ function setContainerSize() {
   const screenWidth = window.innerWidth;
 
   if (screenWidth <= 900) {
-    coomeetContainer.style.width = '100vw';
-    coomeetContainer.style.height = '100vh';
+    coomeetContainer.style.width = window.innerWidth + 'px';
+    coomeetContainer.style.height = window.innerHeight + 'px';
     coomeetContainer.style.borderRadius = '10px';
   } else {
     coomeetContainer.style.width = '1000px';
